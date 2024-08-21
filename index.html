@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <!--fim google fonts-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--fim bootstrap-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="flex.css">
+    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
+
+    <title>PHL NOTICIAS</title>
+    <link class="titulo-logo" rel="icon" href="IMAGENS/breaking_news_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 (1).png">
+</head>
+<!--header-fim-->
+
+<body>
+    <header id="header">
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="IMAGENS/imagem-removebg-preview.png" alt="">
+                </a>
+
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NOTICIA</a></li>
+                    <li><a href="#"> ARTIGOS</a></li>
+
+                </ul>
+            </nav><!--menu desktop-->
+            <div class="btn-contato">
+                <a href="#">
+                    <button>CONTATO</button>
+                </a><!--botao-->
+
+
+            </div>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">NOTICIA</a></li>
+                        <li><a href="#"> ARTIGOS</a></li>
+                        <li><a href="#"> CONTATO</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div><!--menu mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div><!--interface-->
+        <br>
+        <div class="navegacao">
+
+            <ul>
+                <li class="lista ativo">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-tencent-qq"></i></span>
+                        <span class="texto">Biologia</span>
+                    </a>
+                </li>
+
+
+                <li class="lista">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-capsule"></i></span>
+                        <span class="texto">Quimica</span>
+                    </a>
+                </li>
+                <li class="lista">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-sun-fill"></i></span>
+                        <span class="texto">Meteorologia</span>
+                    </a>
+                </li>
+                <li class="lista">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-person-fill"></i></span>
+                        <span class="texto">Humanas</span>
+                    </a>
+                </li>
+                <li class="lista">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-rocket-fill"></i></span>
+                        <span class="texto">Astronomia</span>
+                    </a>
+                </li>
+                <div class="indicador"></div>
+            </ul>
+
+        </div><!--navegacao-->
+
+    </header>
+
+    <section class="banner">
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo do site fim-->
+    </section>
+    <main>
+        <div class="cookies-msg" id="cookies-msg">
+            <div class="cookies-txt">
+                <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados
+                    para um
+                    aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de
+                    acordo com a
+                    utilização dos cookies para te proporcionar uma melhor experiência.</p>
+
+                <div class="cookies-btn">
+                    <button onclick="aceito()">Aceito</button>
+                </div>
+            </div>
+        </div><!--cookies-msg-->
+
+        <section class="categorias">
+            <div class="categorias__destaques">
+                <div class="destaques">
+                    <h1 class="destaques__titulo">Destaques:</h1>
+                    <div class="destaques__barra"></div>
+                    <div>
+                        <img src="IMAGENS/icone-seta-voltar.png">
+                        <img src="IMAGENS/icone-seta-avancar.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="eventos">
+            <h2 class="eventos__titulo">Artigos recentes</h2>
+            <ul class="eventos__lista">
+                <li class="eventos__item">
+                    <img class="artigoss" src="IMAGENS/artigo 1.png" alt="maquinas">
+                    <h2>A modernidade e o ritmo das máquinas:</h2>
+                    <h4>9 de Agosto, 2024</h4>
+                    <h5>Guilherme Fóscolo</h5>
+                    <button>Ver</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="artigoss" src="IMAGENS/artigo 2.png" alt="rupestre">
+                    <h2>Homem danifica arte rupestre
+                    </h2>
+                    <h4>10 de Agosto, 2024</h4>
+                    <h5>Vanessa Centamori</h5>
+                    <button>Ver</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="artigoss" src="IMAGENS/artigo 3.png" alt="montanha">
+                    <h2>Há 800 milhões de anos...</h2>
+                    <h4>11 de Agosto, 2024</h4>
+                    <h5>Maria Fernanda Ziegler</h5>
+                    <button>Ver</button>
+                </li>
+
+
+            </ul>
+            <div class="eventos__botao"><button>Ver mais</button></div>
+        </section>
+        <section class="agenda">
+            <h2 class="agenda__titulo">Coloque na sua agenda!</h2>
+            <ul class="agenda__lista">
+                <li class="agenda__item">
+                    <img class="eventoss" src="IMAGENS/evento 1.jpeg" alt="congresso">
+                    <div class="agenda__informacoes">
+                        <h3>NOVEMBRO 24</h3>
+                        <p>R. Moreira de Godói, 226</p>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>CONGRESSO SENAI</h6>
+                        <button>Avise-me</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img src="IMAGENS/evento 2.png" alt="III ENCONTRO">
+                    <div class="agenda__informacoes">
+                        <h3>NOVEMBRO 15</h3>
+                        <P>R. Pamplona, 145</P>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>III Encontro de divulgadores</h6>
+                        <button>Avise-me</button>
+                    </div>
+                </li>
+
+
+            </ul>
+            <div class="agenda__botao"><button>Ver mais</button></div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape__lista">
+            <h3 class="rodape__titulo">Categorias</h3>
+            <li class="txtrodape">Biologia</li>
+            <li class="txtrodape">Astronomia</li>
+            <li class="txtrodape">Quimica</li>
+            <li class="txtrodape">Fisica</li>
+            <li class="txtrodape">Sociais</li>
+            <li class="txtrodape">Linguisticas</li>
+            <li class="txtrodape">Exatas</li>
+            <li class="txtrodape">Humanas</li>
+        </ul>
+        <ul class="rodape__lista">
+            <h3 class="rodape__titulo">Eventos</h3>
+            <li>Esta semana</li>
+            <li>Este mês</li>
+            <li>Este trimestre</li>
+            <li>Este ano</li>
+        </ul>
+        <ul class="rodape__lista">
+            <h3 class="rodape__titulo">Sobre nós</h3>
+            <li class="txtrodape">História</li>
+            <li class="txtrodape">Contato</li>
+            <li class="txtrodape">Localização</li>
+        </ul>
+        <div class="rodape__logo">
+            <h4></h4>
+            <img src="IMAGENS/rodapelogo.png">
+            <p>Desenvolvido por Pedro Brito, Henry yuji e Lucas de Palma.</p>
+        </div>
+    </footer>
